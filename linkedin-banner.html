@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bannière LinkedIn - Développeur Web Fullstack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .banner {
+            width: 1584px;
+            height: 396px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        /* Effet de grille technologique */
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.3;
+        }
+
+        /* Éléments décoratifs */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            right: 100px;
+        }
+
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            left: 50px;
+        }
+
+        .circle-3 {
+            width: 150px;
+            height: 150px;
+            top: 50px;
+            left: 200px;
+            background: rgba(255,255,255,0.05);
+        }
+
+        /* Contenu principal */
+        .content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 80px;
+        }
+
+        .title {
+            font-size: 72px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 36px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 25px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Icônes de code décoratifs */
+        .code-symbols {
+            position: absolute;
+            font-family: 'Courier New', monospace;
+            color: rgba(255,255,255,0.15);
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .symbol-1 {
+            top: 30px;
+            right: 150px;
+        }
+
+        .symbol-2 {
+            bottom: 40px;
+            right: 250px;
+        }
+
+        .symbol-3 {
+            top: 120px;
+            right: 450px;
+        }
+
+        .symbol-4 {
+            bottom: 80px;
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        
+        <div class="code-symbols symbol-1">&lt;/&gt;</div>
+        <div class="code-symbols symbol-2">{ }</div>
+        <div class="code-symbols symbol-3">[ ]</div>
+        <div class="code-symbols symbol-4">&lt;div&gt;</div>
+        
+        <div class="content">
+            <div class="title">Développeur Web Fullstack</div>
+            <div class="subtitle">Création d'expériences web modernes et performantes</div>
+            <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
