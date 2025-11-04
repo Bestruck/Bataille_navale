@@ -1,0 +1,84 @@
+<svg width="1584" height="396" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
+  </defs>
+  
+  <!-- Fond dégradé -->
+  <rect width="1584" height="396" fill="url(#grad1)"/>
+  
+  <!-- Grille de fond -->
+  <g opacity="0.15">
+    <path d="M 0 0 L 1584 0 L 1584 396 L 0 396 Z" fill="none" stroke="white" stroke-width="1" stroke-dasharray="50,50"/>
+    <line x1="0" y1="50" x2="1584" y2="50" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="1584" y2="100" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="1584" y2="150" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="1584" y2="200" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="1584" y2="250" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="1584" y2="300" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="350" x2="1584" y2="350" stroke="white" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Cercles décoratifs -->
+  <circle cx="1400" cy="100" r="150" fill="white" opacity="0.1"/>
+  <circle cx="150" cy="350" r="100" fill="white" opacity="0.1"/>
+  <circle cx="300" cy="100" r="75" fill="white" opacity="0.05"/>
+  
+  <!-- Symboles de code -->
+  <text x="1350" y="80" font-family="monospace" font-size="48" fill="white" opacity="0.15" font-weight="bold">&lt;/&gt;</text>
+  <text x="1250" y="350" font-family="monospace" font-size="48" fill="white" opacity="0.15" font-weight="bold">{ }</text>
+  <text x="1050" y="150" font-family="monospace" font-size="48" fill="white" opacity="0.15" font-weight="bold">[ ]</text>
+  <text x="200" y="340" font-family="monospace" font-size="40" fill="white" opacity="0.15" font-weight="bold">&lt;div&gt;</text>
+  
+  <!-- Contenu principal -->
+  <g>
+    <!-- Titre -->
+    <text x="80" y="150" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">
+      Développeur Web Fullstack
+    </text>
+    
+    <!-- Sous-titre -->
+    <text x="80" y="200" font-family="Arial, sans-serif" font-size="32" fill="white" opacity="0.95">
+      Création d'expériences web modernes et performantes
+    </text>
+    
+    <!-- Tags de technologies -->
+    <g>
+      <!-- React -->
+      <rect x="80" y="240" width="110" height="45" rx="22.5" fill="white" opacity="0.2"/>
+      <rect x="80" y="240" width="110" height="45" rx="22.5" fill="none" stroke="white" stroke-width="1" opacity="0.3"/>
+      <text x="135" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="white" text-anchor="middle">React</text>
+      
+      <!-- Node.js -->
+      <rect x="205" y="240" width="120" height="45" rx="22.5" fill="white" opacity="0.2"/>
+      <rect x="205" y="240" width="120" height="45" rx="22.5" fill="none" stroke="white" stroke-width="1" opacity="0.3"/>
+      <text x="265" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="white" text-anchor="middle">Node.js</text>
+      
+      <!-- TypeScript -->
+      <rect x="340" y="240" width="150" height="45" rx="22.5" fill="white" opacity="0.2"/>
+      <rect x="340" y="240" width="150" height="45" rx="22.5" fill="none" stroke="white" stroke-width="1" opacity="0.3"/>
+      <text x="415" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="white" text-anchor="middle">TypeScript</text>
+      
+      <!-- MongoDB -->
+      <rect x="505" y="240" width="140" height="45" rx="22.5" fill="white" opacity="0.2"/>
+      <rect x="505" y="240" width="140" height="45" rx="22.5" fill="none" stroke="white" stroke-width="1" opacity="0.3"/>
+      <text x="575" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="white" text-anchor="middle">MongoDB</text>
+      
+      <!-- PostgreSQL -->
+      <rect x="660" y="240" width="150" height="45" rx="22.5" fill="white" opacity="0.2"/>
+      <rect x="660" y="240" width="150" height="45" rx="22.5" fill="none" stroke="white" stroke-width="1" opacity="0.3"/>
+      <text x="735" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="white" text-anchor="middle">PostgreSQL</text>
+      
+      <!-- Docker -->
+      <rect x="825" y="240" width="120" height="45" rx="22.5" fill="white" opacity="0.2"/>
+      <rect x="825" y="240" width="120" height="45" rx="22.5" fill="none" stroke="white" stroke-width="1" opacity="0.3"/>
+      <text x="885" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="white" text-anchor="middle">Docker</text>
+    </g>
+  </g>
+</svg>
